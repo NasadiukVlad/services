@@ -1,12 +1,12 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from '@angular/common/http';
+import {Router} from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class LoggerService {
 
-  constructor(private http: HttpClient) { }
+  constructor(private router: Router) { }
 
   public logComponentCreation(componentName: string) {
     console.log('Component creation:' + componentName);
